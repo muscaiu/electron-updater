@@ -50,3 +50,7 @@ autoUpdater.on('update-downloaded', () => {
   console.log('update-downloaded');
   mainWindow.webContents.send('update_downloaded');
 });
+
+ipcMain.on('restart_app', () => {
+  autoUpdater.quitAndInstall();
+});
