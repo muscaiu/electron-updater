@@ -20,7 +20,6 @@ function createWindow () {
     console.log('ready-to-show');
     autoUpdater.checkForUpdatesAndNotify();
   });
-  
 }
 
 app.on('ready', () => {
